@@ -3,6 +3,7 @@
 trap "kill 0" SIGINT
 export bench_cmd="rewrk -t 12 -c 500 -d 30s -h http://127.0.0.1:3000"
 cd ../../benchmark
+cargo build --release --target=wasm32-wasi --bin hello-world-lunatic
 cargo build --release --bin hello-world-actix-web
 cargo build --release --bin hello-world-astra
 cargo build --release --bin hello-world-axum
@@ -14,6 +15,13 @@ cargo build --release --bin hello-world-thruster
 cargo build --release --bin hello-world-tide
 cargo build --release --bin hello-world-warp
 (
+# lunatic
+echo "Lunatic:"
+lunatic target/wasm32-wasi/release/hello-world-lunatic.wasm &
+sleep 1
+eval $bench_cmd
+kill $!
+
 # actix-web
 echo "Actix Web:"
 cargo run -q --release --bin hello-world-actix-web &
