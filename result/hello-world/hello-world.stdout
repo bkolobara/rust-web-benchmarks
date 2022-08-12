@@ -1,125 +1,14 @@
-Lunatic:
+Submillisecond:
 Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
+Benchmarking 100 connections @ http://127.0.0.1:3000 for 30 second(s)
   Latencies:
     Avg      Stdev    Min      Max      
-    439.46ms  3050.10ms  0.04ms   25950.86ms  
+    4.69ms   3.56ms   0.04ms   409.41ms  
   Requests:
-    Total:  20241  Req/Sec: 674.67 
+    Total: 640029  Req/Sec: 21334.90
   Transfer:
-    Total: 730.88 KB Transfer Rate: 24.36 KB/Sec
-
-12570 Errors: error shutting down connection: Socket is not connected (os error 57)
-8123 Errors: connection closed
+    Total: 103.76 MB Transfer Rate: 3.46 MB/Sec
 
 Actix Web:
 Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-Astra:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    3.49ms   3.96ms   0.02ms   125.79ms  
-  Requests:
-    Total: 1272955 Req/Sec: 42437.11
-  Transfer:
-    Total: 129.85 MB Transfer Rate: 4.33 MB/Sec
-
-609 Errors: error shutting down connection: Socket is not connected (os error 57)
-
-Axum:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    25.71ms  14.63ms  0.06ms   113.90ms  
-  Requests:
-    Total: 582899  Req/Sec: 19426.07
-  Transfer:
-    Total: 72.21 MB Transfer Rate: 2.41 MB/Sec
-
-490 Errors: error shutting down connection: Socket is not connected (os error 57)
-
-Hyper:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    24.65ms  15.26ms  0.05ms   115.17ms  
-  Requests:
-    Total: 607924  Req/Sec: 20264.84
-  Transfer:
-    Total: 51.55 MB Transfer Rate: 1.72 MB/Sec
-
-518 Errors: error shutting down connection: Socket is not connected (os error 57)
-2 Errors: connection closed
-
-Ntex:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    24.97ms  8.56ms   0.03ms   124.38ms  
-  Requests:
-    Total: 600487  Req/Sec: 20017.15
-  Transfer:
-    Total: 73.80 MB Transfer Rate: 2.46 MB/Sec
-
-632 Errors: error shutting down connection: Socket is not connected (os error 57)
-
-Poem:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    21.65ms  15.41ms  0.04ms   128.17ms  
-  Requests:
-    Total: 691919  Req/Sec: 23061.33
-  Transfer:
-    Total: 85.70 MB Transfer Rate: 2.86 MB/Sec
-
-642 Errors: error shutting down connection: Socket is not connected (os error 57)
-
-Rocket:
-Warning: found value for deprecated config key `env`
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    22.23ms  14.54ms  0.05ms   120.27ms  
-  Requests:
-    Total: 674025  Req/Sec: 22466.54
-  Transfer:
-    Total: 159.28 MB Transfer Rate: 5.31 MB/Sec
-
-549 Errors: error shutting down connection: Socket is not connected (os error 57)
-
-Thruster:
-Warning: Received SIGTERM. Requesting shutdown.
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    20.46ms  14.04ms  0.04ms   105.64ms  
-  Requests:
-    Total: 732277  Req/Sec: 24424.34
-  Transfer:
-    Total: 71.23 MB Transfer Rate: 2.38 MB/Sec
-
-Tide:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-Warp:
-Beginning round 1...
-Benchmarking 500 connections @ http://127.0.0.1:3000 for 30 second(s)
-  Latencies:
-    Avg      Stdev    Min      Max      
-    20.45ms  12.92ms  0.06ms   109.49ms  
-  Requests:
-    Total: 732714  Req/Sec: 24426.56
-  Transfer:
-    Total: 90.81 MB Transfer Rate: 3.03 MB/Sec
-
-208 Errors: error shutting down connection: Socket is not connected (os error 57)
-
+Benchmarking 100 connections @ http://127.0.0.1:3000 for 30 second(s)
